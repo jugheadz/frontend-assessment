@@ -6,8 +6,8 @@ const ArticleDetails = ({content} : {content: string}) => {
         __html: DOMPurify.sanitize(content)
       }), [content]);
     return (
-        <div>
-            <p dangerouslySetInnerHTML={sanitizedContent}/>
+        <div className='font-sans'>
+            <p className="text-gray-500" dangerouslySetInnerHTML={sanitizedContent}/>
         </div>
     )
 }

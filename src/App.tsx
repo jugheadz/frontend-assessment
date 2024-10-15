@@ -12,7 +12,7 @@ function App() {
         <Introduction/>
       </Section>
       <Section classNames="flex flex-col gap-6">
-        <h1 className="uppercase text-center text-4xl">All the latest from AEG</h1>
+        <h1 className="uppercase text-center text-5xl">All the latest from AEG</h1>
         <Articles/>
       </Section>
     </main>
