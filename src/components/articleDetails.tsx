@@ -7,7 +7,7 @@ const ArticleDetails = ({content} : {content: string}) => {
       }), [content]);
     return (
         <div className='font-sans'>
-            <p className="text-gray-500" dangerouslySetInnerHTML={sanitizedContent}/>
+            <p className="text-gray-500 text-center md:text-start" dangerouslySetInnerHTML={sanitizedContent}/>
         </div>
     )
 }

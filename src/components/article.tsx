@@ -9,7 +9,7 @@ const Article = ({
   data: { title: string; content: string; image: string };
 }) => {
   return (
-    <article className="flex flex-col flex-1 font-sans gap-y-4">
+    <article className="flex flex-col flex-1 gap-y-4 items-center justify-center md:items-start md:justify-start">
       <Image src={image} />
       <ArticleTitle title={title} />
       <ArticleDetails content={content} />

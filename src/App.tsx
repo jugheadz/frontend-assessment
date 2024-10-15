@@ -7,12 +7,12 @@ import IntroductionImages from "./components/introductionImages";
 function App() {
   return (
     <main className="font-sans max-w-[1280px] mx-auto flex flex-col gap-20 p-20">
-      <Section classNames="flex gap-6">
+      <Section classNames="flex gap-6 flex-col justify-center items-center lg:flex-row lg:items-start">
         <IntroductionImages/>
         <Introduction/>
       </Section>
       <Section classNames="flex flex-col gap-6">
-        <h1 className="uppercase text-center text-5xl">All the latest from AEG</h1>
+        <h1 className="uppercase text-center text-2xl md:text-3xl lg:text-4xl">All the latest from AEG</h1>
         <Articles/>
       </Section>
     </main>
