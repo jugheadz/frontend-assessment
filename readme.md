@@ -34,9 +34,9 @@ We are looking for your ability to bring life to static designs. During that pro
 * **Quality:** Production-grade build and precision.
 
 ## Start dev
-Run npm run dev
+Run `npm run dev` to start local development
 
-Article data based on article.json file
-Styled by tailwindcss
-Installed Shadcn/ui for the dialog
-Added click function on anchor tag, console log the tag element and article element
+* Article data based on article.json file
+* Styled by tailwindcss
+* Installed Shadcn/ui for the dialog
+* Added click function on anchor tag, console log the tag element and article element
