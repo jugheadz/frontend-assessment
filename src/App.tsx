@@ -6,7 +6,7 @@ import IntroductionImages from "./components/introductionImages";
 
 function App() {
   return (
-    <main className="font-sans max-w-[1280px] mx-auto flex flex-col gap-20 p-20">
+    <main className="font-sans max-w-[1280px] mx-auto flex flex-col gap-20 p-6 md:p-20">
       <Section classNames="flex gap-6 flex-col justify-center items-center lg:flex-row lg:items-start">
         <IntroductionImages/>
         <Introduction/>
