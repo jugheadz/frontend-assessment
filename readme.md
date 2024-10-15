@@ -1,91 +1,42 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+# Interface Development Test
 
-Exercise 1
----
-Build a responsive page based on the designs.
+## Design assets
+* Invision public URL: https://invis.io/N312IJ0C8GMK
+* Assets used in the build have been packaged under the `/assets` folder.
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+## Test instructions
+In the linked Invision page you will find the designs for two components. Complete the following:
+* The code should be submitted via a github account. Bonus points for more than one commit.
+* Build the two blocks using modern HTML5 standards.
+* Use JavaScript to capture all anchor clicks, and `console.log()` the element which has been clicked.
+* As with any modern web-build we expect a level of interactivity/animation to be displayed on the nodes.
+* All content areas should be deemed as being populated from a CMS - so all copy lengths can vary!
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+## Technologies
+* Any CSS-preprocessors or frameworks.
+* ES5 or ES6+ acceptable.
+* Please include some reasoning for the decisions via comments or readme.
+* Build tools and task runners are encouraged (e.g. grunt/gulp/webpack).
 
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
+## Layout
+* The layout is expected to work in the latest Chrome/FireFox/Edge versions.
+* The layout should be responsive and work down to a `320px` mobile device.
+* Bearing in mind that this application is expected to be responsive, the developer should consider the appropriate `<meta>` tags.
+* **Section: All the latest:** Assume these items need anchor tags, but have no link defined.
+* **Section: Answer your body's needs:** Each image in this section should display in a modal on click.
 
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+## Review Criteria
+We are looking for your ability to bring life to static designs. During that process consider the following:
+* **Project structure:** Clean project and logical traversal.
+* **JavaScript:** Efficiency of code and efficacy in bringing the design to life.
+* **Interface:** Semantic markup styling.
+* **Git:** Bonus points for submission on a github account showing multiple commits.
+* **Quality:** Production-grade build and precision.
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+## Start dev
+Run npm run dev
 
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
-
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
-
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Article data based on article.json file
+Styled by tailwindcss
+Installed Shadcn/ui for the dialog
+Added click function on anchor tag, console log the tag element and article element

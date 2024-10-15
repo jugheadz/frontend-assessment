@@ -5,18 +5,12 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-const ImageDialog = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+const ImageDialog = ({ children }: { children: React.ReactNode }) => {
   return (
     <Dialog>
       <DialogTrigger>{children}</DialogTrigger>
       <DialogContent className="bg-[#252525] border-none">
-        <DialogHeader>
-          {children}
-        </DialogHeader>
+        <DialogHeader>{children}</DialogHeader>
       </DialogContent>
     </Dialog>
   );

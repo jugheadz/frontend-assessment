@@ -16,7 +16,7 @@ const IntroductionImages = () => {
           <img src={secondImage} />
         </ImageDialog>
         <ImageDialog>
-            <img src={thirdImage} />
+          <img src={thirdImage} />
         </ImageDialog>
       </div>
     </div>
